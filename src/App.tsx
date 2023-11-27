@@ -45,14 +45,6 @@ const Game =  (props) => {
     console.log(number, currentStatus);
   };
 
-  // manually reset the game
-  // const resetGame = () => {
-  //   setAvailableNums(utils.range(1, 9));
-  //   setCandidateNums([]);
-  //   setStars(utils.random(1, 9));
-  //   setSecondsLeft(10);
-  // }
-
   return (
     <div className='game'>
       <div className='help'>
@@ -88,8 +80,8 @@ const StarsDisplay = (props) => {
 const PlayAgain = (props) => {
   return (
     <div className='game-done' style={{color : props.gameStatus === 'won' ? 'green' : 'red'}}>
-      {props.gameStatus === 'won' ? <p className='message'>Alhamdolilah You won :)</p> 
-        : <p className='message'>Never surrender !!</p>}
+      {props.gameStatus === 'won' ? <p className='message'>Ma shaa Allah, mabrook 🎉</p> 
+        : <p className='message'>Never surrender 💪🏽💪🏽</p>}
       <button onClick={props.playAgain}>Play Again ?</button>
     </div>
   );
